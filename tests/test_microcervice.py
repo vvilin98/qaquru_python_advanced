@@ -49,6 +49,6 @@ def test_create_user():
 
 def test_delete_user():
     response = requests.delete(f'{BASE_URL}/api/users/{MOCK_USER_DATA["data"]["id"]}')
-    assert response.status_code == 200
+    assert response.status_code == 204
 
 
